@@ -1,0 +1,32 @@
+﻿@model EmployeeCRUD_MVC.Models.Employee
+
+@{
+    ViewData["Title"] = "Detalles del Empleado";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">Detalles del Empleado</h2>
+
+    <div class="card p-4 shadow-sm">
+        <dl class="row">
+            <dt class="col-sm-3">Nombre</dt>
+            <dd class="col-sm-9">@Model.FullName</dd>
+
+            <dt class="col-sm-3">Email</dt>
+            <dd class="col-sm-9">@Model.Email</dd>
+
+            <dt class="col-sm-3">Teléfono</dt>
+            <dd class="col-sm-9">@Model.Phone</dd>
+
+            <dt class="col-sm-3">Posición</dt>
+            <dd class="col-sm-9">@Model.Position</dd>
+        </dl>
+
+        <div class="mt-4">
+            <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary me-2">Editar</a>
+            <a asp-action="Index" class="btn btn-secondary">Volver a la lista</a>
+        </div>
+                
+    </div>
+</div>
+

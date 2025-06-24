@@ -1,0 +1,31 @@
+﻿@model EmployeeCRUD_MVC.Models.Employee
+
+@{
+    ViewData["Title"] = "Eliminar Empleado";
+}
+
+<div class="container mt-4">
+    <h2 class="text-danger mb-4">¿Estás seguro que deseas eliminar este empleado?</h2>
+
+    <div class="card p-4 shadow-sm">
+        <dl class="row">
+            <dt class="col-sm-3">Nombre</dt>
+            <dd class="col-sm-9">@Model.FullName</dd>
+
+            <dt class="col-sm-3">Email</dt>
+            <dd class="col-sm-9">@Model.Email</dd>
+
+            <dt class="col-sm-3">Teléfono</dt>
+            <dd class="col-sm-9">@Model.Phone</dd>
+
+            <dt class="col-sm-3">Posición</dt>
+            <dd class="col-sm-9">@Model.Position</dd>
+        </dl>
+
+        <form asp-action="Delete" class="mt-4">
+            <input type="hidden" asp-for="Id" />
+            <button type="submit" class="btn btn-danger me-2">Eliminar</button>
+            <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+        </form>
+    </div>
+</div>
