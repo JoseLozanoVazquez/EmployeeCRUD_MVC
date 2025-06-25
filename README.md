@@ -38,4 +38,4 @@ Este es un proyecto CRUD completo desarrollado con **ASP.NET Core MVC** y **SQL 
 ## ⚙️ Configuración
 1. Clona el repositorio:
 ```bash
-git clone https://github.com/tu-usuario/employee-manager-crud.git
+git clone https://github.com/JoseLozanoVazquez/EmployeeCRUD_MVC.git
